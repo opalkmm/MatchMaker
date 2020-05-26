@@ -1,0 +1,21 @@
+{
+  "name": "MatchMaker",
+  "version": "1.0.0",
+  "description": "this is a dating app, the users are matched based on the quiz results showing their compatibility",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/opalkmm/MatchMaker.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/opalkmm/MatchMaker/issues"
+  },
+  "homepage": "https://github.com/opalkmm/MatchMaker#readme"
+}
