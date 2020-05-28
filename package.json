@@ -1,5 +1,5 @@
 {
-  "name": "MatchMaker",
+  "name": "matchmaker",
   "version": "1.0.0",
   "description": "this is a dating app, the users are matched based on the quiz results showing their compatibility",
   "main": "server.js",
@@ -17,5 +17,8 @@
   "bugs": {
     "url": "https://github.com/opalkmm/MatchMaker/issues"
   },
-  "homepage": "https://github.com/opalkmm/MatchMaker#readme"
+  "homepage": "https://github.com/opalkmm/MatchMaker#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
 }
