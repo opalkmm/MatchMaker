@@ -8,12 +8,11 @@ var matchArray = require('../app/data/friends');
 
 module.exports = function(app){
     //GET route with api/data/friends to display JSON of all possible matches
-    app.get("/routing/apiRoutes", function(req,res){
+    app.get("/api/friends", function(req,res){
         res.json(matchArray);
     });
 
     //if no matching route, default to home 
-
 //     app.get("*", function(req,res){
 //         res.sendFile(path.join(__dirname, "./home.html"));
 //     });
