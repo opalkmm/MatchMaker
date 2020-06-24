@@ -4,175 +4,233 @@
 
 
 <html>
-    <head>
-        <meta charset="UTF-8">
-        <meta name="description" content="matchmaker">
-        <meta name="author" content="Ornrumpa Kanchanomai">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootswatch/4.5.0/minty/bootstrap.min.css" rel="stylesheet" integrity="sha384-HqaYdAE26lgFCJsUF9TBdbZf7ygr9yPHtxtg37JshqVQi6CCAo6Qvwmgc5xclIiV" crossorigin="anonymous">
-        <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous"> -->
-    </head>
-    <body>
-        <!--navbar and brand logo--> 
-        <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
-            <a class="navbar-brand" href="#">
-            <img src="https://clipart.info/images/ccovers/1513313791facebook-circle-heart-love-png.png" width="30" height="30" alt="">
-             Match Maker
-            </a>
-          </nav>
-          <br>
-    
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="matchmaker">
+    <meta name="author" content="Ornrumpa Kanchanomai">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootswatch/4.5.0/minty/bootstrap.min.css"
+        rel="stylesheet" integrity="sha384-HqaYdAE26lgFCJsUF9TBdbZf7ygr9yPHtxtg37JshqVQi6CCAo6Qvwmgc5xclIiV"
+        crossorigin="anonymous">
+    <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous"> -->
+</head>
+
+<body>
+    <!--navbar and brand logo-->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+        <a class="navbar-brand" href="#">
+            <img src="https://clipart.info/images/ccovers/1513313791facebook-circle-heart-love-png.png" width="30"
+                height="30" alt="">
+            Match Maker
+        </a>
+    </nav>
+    <br>
+
+    <header>
+        <h6>Please fill out the questionaire below</h6>
+        <h3><strong>About You</strong></h3>
+        <h4>Name (Required)</h4>
+        <input type="text" id="name" class="form-control" required>
+
+        <h4>Link to Photo Image (Required)</h4>
+        <input type="text" id="photo" class="form-control" required>
+
+        <hr>
+        <p class="text-primary">select the options that <strong>best describe you</strong></p>
+    </header><br>
+
+    <form>
+        <fieldset>
+            <div class="form-group">
+                <label for="q1">1) I easily develop emotional ties to others.</label>
+                <select class="form-control" id="q1">
+                    <option value="none" selected disabled hidden>
+                        Select an Option
+                    </option>
+                    <option value="1">Completely False</option>
+                    <option value="2">Mostly False</option>
+                    <option value="3">Somewhat True or False</option>
+                    <option value="4">Mostly True</option>
+                    <option value="5">Completely True</option>
+                </select> <br>
+
+                <label for="q2">2) Having to depend on other people makes me uneasy.</label>
+                <select class="form-control" id="q2">
+                    <option value="none" selected disabled hidden>
+                        Select an Option
+                    </option>
+                    <option value="1">Completely False</option>
+                    <option value="2">Mostly False</option>
+                    <option value="3">Somewhat True or False</option>
+                    <option value="4">Mostly True</option>
+                    <option value="5">Completely True</option>
+                </select><br>
+
+                <label for="q3">3) I worry that my partner cares less about me than I care about him or her.</label>
+                <select class="form-control" id="q3">
+                    <option value="none" selected disabled hidden>
+                        Select an Option
+                    </option>
+                    <option value="1">Completely False</option>
+                    <option value="2">Mostly False</option>
+                    <option value="3">Somewhat True or False</option>
+                    <option value="4">Mostly True</option>
+                    <option value="5">Completely True</option>
+                </select><br>
+
+                <label for="q4">4) If a partner pushes me to establish a commitment, I freak out inside.</label>
+                <select class="form-control" id="q4">
+                    <option value="none" selected disabled hidden>
+                        Select an Option
+                    </option>
+                    <option value="1">Completely False</option>
+                    <option value="2">Mostly False</option>
+                    <option value="3">Somewhat True or False</option>
+                    <option value="4">Mostly True</option>
+                    <option value="5">Completely True</option>
+                </select><br>
+
+                <label for="q5">5) If I'm not in a relationship, I am nobody.</label>
+                <select class="form-control" id="q5">
+                    <option value="none" selected disabled hidden>
+                        Select an Option
+                    </option>
+                    <option value="1">Completely False</option>
+                    <option value="2">Mostly False</option>
+                    <option value="3">Somewhat True or False</option>
+                    <option value="4">Mostly True</option>
+                    <option value="5">Completely True</option>
+                </select><br>
+
+                <label for="q6">6) I am constantly trying to fix other people's problems.</label>
+                <select class="form-control" id="q6">
+                    <option value="none" selected disabled hidden>
+                        Select an Option
+                    </option>
+                    <option value="1">Completely False</option>
+                    <option value="2">Mostly False</option>
+                    <option value="3">Somewhat True or False</option>
+                    <option value="4">Mostly True</option>
+                    <option value="5">Completely True</option>
+                </select><br>
+
+                <label for="q7">7) I let my partner decide everything for me. </label>
+                <select class="form-control" id="q7">
+                    <option value="none" selected disabled hidden>
+                        Select an Option
+                    </option>
+                    <option value="1">Completely False</option>
+                    <option value="2">Mostly False</option>
+                    <option value="3">Somewhat True or False</option>
+                    <option value="4">Mostly True</option>
+                    <option value="5">Completely True</option>
+                </select><br>
+
+                <label for="q8">8) I do whatever my partner wants or tells me to do. </label>
+                <select class="form-control" id="q8">
+                    <option value="none" selected disabled hidden>
+                        Select an Option
+                    </option>
+                    <option value="1">Completely False</option>
+                    <option value="2">Mostly False</option>
+                    <option value="3">Somewhat True or False</option>
+                    <option value="4">Mostly True</option>
+                    <option value="5">Completely True</option>
+                </select><br>
+
+                <label for="q9">9) It's hard for me to let my walls down.</label>
+                <select class="form-control" id="q9">
+                    <option value="none" selected disabled hidden>
+                        Select an Option
+                    </option>
+                    <option value="1">Completely False</option>
+                    <option value="2">Mostly False</option>
+                    <option value="3">Somewhat True or False</option>
+                    <option value="4">Mostly True</option>
+                    <option value="5">Completely True</option>
+                </select><br>
+
+                <label for="q10">10) When a relationship starts to become more intimate, I feel the urge to break it
+                    off.</label>
+                <select class="form-control" id="q10">
+                    <option value="none" selected disabled hidden>
+                        Select an Option
+                    </option>
+                    <option value="1">Completely False</option>
+                    <option value="2">Mostly False</option>
+                    <option value="3">Somewhat True or False</option>
+                    <option value="4">Mostly True</option>
+                    <option value="5">Completely True</option>
+                </select><br>
+            </div>
 
 
+            <button type="submit" id="submit" class="btn btn-primary">Submit</button>
 
-         <header>
-            <h6>Please fill out the questionaire below</h6>
-            <p class="text-primary">select the options that <strong>best describe you</strong></p>
-        </header><br>
+        </fieldset>
+    </form>
 
-        <form>
-            <fieldset>
-                  <div class="form-group">
-                    <label for="q1">1) I easily develop emotional ties to others.</label>
-                    <select class="form-control" id="q1">
-                        <option value="none" selected disabled hidden> 
-                            Select an Option 
-                        </option> 
-                      <option value="1">Completely False</option>
-                      <option value="2">Mostly False</option>
-                      <option value="3">Somewhat True or False</option>
-                      <option value="4">Mostly True</option>
-                      <option value="5">Completely True</option>
-                    </select> <br>
+</body>
 
-                    <label for="q2">2) Having to depend on other people makes me uneasy.</label>
-                    <select class="form-control" id="q2">
-                        <option value="none" selected disabled hidden> 
-                            Select an Option 
-                        </option> 
-                        <option value="1">Completely False</option>
-                        <option value="2">Mostly False</option>
-                        <option value="3">Somewhat True or False</option>
-                        <option value="4">Mostly True</option>
-                        <option value="5">Completely True</option>
-                    </select><br>
+<!-- Modal -->
+<div id="results-modal" class="modal fade" role="dialog">
+    <div class="modal-dialog">
 
-                    <label for="q3">3) I worry that my partner cares less about me than I care about him or her.</label>
-                    <select class="form-control" id="q3">
-                        <option value="none" selected disabled hidden> 
-                            Select an Option 
-                        </option> 
-                        <option value="1">Completely False</option>
-                        <option value="2">Mostly False</option>
-                        <option value="3">Somewhat True or False</option>
-                        <option value="4">Mostly True</option>
-                        <option value="5">Completely True</option>
-                    </select><br>
+        <!-- Modal content-->
+        <div class="modal-content">
+            <div class="modal-header">
+                <button class="close" data-dismiss="modal">&times;</button>
+                <h2 class="modal-title"><strong>Best Match</strong></h2>
+            </div>
+            <div class="modal-body">
+                <h2 id="match-name"></h2>
+                <img id="match-img" src="https://media.licdn.com/mpr/mpr/shrinknp_400_400/p/6/005/064/1bd/3435aa3.jpg"
+                    alt="">
+            </div>
+            <div class="modal-footer">
+                <button class="btn btn-default" data-dismiss="modal">Close</button>
+            </div>
+        </div>
 
-                    <label for="q4">4) If a partner pushes me to establish a commitment, I freak out inside.</label>
-                    <select class="form-control" id="q4">
-                        <option value="none" selected disabled hidden> 
-                            Select an Option 
-                        </option> 
-                        <option value="1">Completely False</option>
-                        <option value="2">Mostly False</option>
-                        <option value="3">Somewhat True or False</option>
-                        <option value="4">Mostly True</option>
-                        <option value="5">Completely True</option>
-                    </select><br>
+    </div>
+</div>
 
-                    <label for="q5">5) If I'm not in a relationship, I am nobody.</label>
-                    <select class="form-control" id="q5">
-                        <option value="none" selected disabled hidden> 
-                            Select an Option 
-                        </option> 
-                        <option value="1">Completely False</option>
-                        <option value="2">Mostly False</option>
-                        <option value="3">Somewhat True or False</option>
-                        <option value="4">Mostly True</option>
-                        <option value="5">Completely True</option>
-                    </select><br>
-
-                    <label for="q6">6) I am constantly trying to fix other people's problems.</label>
-                    <select class="form-control" id="q6">
-                        <option value="none" selected disabled hidden> 
-                            Select an Option 
-                        </option> 
-                        <option value="1">Completely False</option>
-                        <option value="2">Mostly False</option>
-                        <option value="3">Somewhat True or False</option>
-                        <option value="4">Mostly True</option>
-                        <option value="5">Completely True</option>
-                    </select><br>
-
-                    <label for="q7">7) I let my partner decide everything for me.	</label>
-                    <select class="form-control" id="q7">
-                        <option value="none" selected disabled hidden> 
-                            Select an Option 
-                        </option> 
-                        <option value="1">Completely False</option>
-                        <option value="2">Mostly False</option>
-                        <option value="3">Somewhat True or False</option>
-                        <option value="4">Mostly True</option>
-                        <option value="5">Completely True</option>
-                    </select><br>
-
-                    <label for="q8">8) I do whatever my partner wants or tells me to do.	</label>
-                    <select class="form-control" id="q8">
-                        <option value="none" selected disabled hidden> 
-                            Select an Option 
-                        </option> 
-                        <option value="1">Completely False</option>
-                        <option value="2">Mostly False</option>
-                        <option value="3">Somewhat True or False</option>
-                        <option value="4">Mostly True</option>
-                        <option value="5">Completely True</option>
-                    </select><br>
-
-                    <label for="q9">9) It's hard for me to let my walls down.</label>
-                    <select class="form-control" id="q9">
-                        <option value="none" selected disabled hidden> 
-                            Select an Option 
-                        </option> 
-                        <option value="1">Completely False</option>
-                        <option value="2">Mostly False</option>
-                        <option value="3">Somewhat True or False</option>
-                        <option value="4">Mostly True</option>
-                        <option value="5">Completely True</option>
-                    </select><br>
-
-                    <label for="q10">10) When a relationship starts to become more intimate, I feel the urge to break it off.</label>
-                    <select class="form-control" id="q10">
-                        <option value="none" selected disabled hidden> 
-                            Select an Option 
-                        </option> 
-                        <option value="1">Completely False</option>
-                        <option value="2">Mostly False</option>
-                        <option value="3">Somewhat True or False</option>
-                        <option value="4">Mostly True</option>
-                        <option value="5">Completely True</option>
-                    </select><br>
-                  </div>
-                 
-              
-              <button type="submit" class="btn btn-primary">Submit</button>
-
-            </fieldset>
-          </form>
-    
-    </body>
 </html>
-<!-- 
-<script type = "text/javascript">
 
-function showResult(){
-    //whatever URL the users are in
-    var currentURL = window.location.origin;
+<script type="text/javascript">
 
-    //ajax call
-    $.ajax({url: currentURL + "api/survey",
-method: GET})
+    // when click submit
+    $("#submit").on("click", function (event) {
+        event.preventDefault();
 
-.done(function(matchArray))
-} 
-</script> -->
+        //grab values (name,photo,scores)
+        var user = {
+            name: $("#name").val(),
+            photo: $("#photo").val(),
+            scores: [
+                $("#q1").val(),
+                $("#q2").val(),
+                $("#q3").val(),
+                $("#q4").val(),
+                $("#q5").val(),
+                $("#q6").val(),
+                $("#q7").val(),
+                $("#q8").val(),
+                $("#q9").val(),
+                $("#q10").val()
+            ]
+        }
+        // AJAX post the data to the friends API.
+        $.post("/api/friends", user, function (data) {
+
+            //get results from AJAX POST and show on the page
+            $("#match-name").text(data.name);
+            $("#match-img").attr("src", data.photo);
+
+            // Show the modal with the best match
+            $("#results-modal").modal("toggle");
+
+        });
+    })
+</script>
