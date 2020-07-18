@@ -27,187 +27,175 @@
     </nav>
     <br>
 
-    <header>
+
+    <div id="match" hidden=false>
+        <h2>YOUR NEW BESTIE</h2>
+        <h3 id="match-name"></h3>
+        <img height=300px width=auto id="matchphoto" src="">
+    </div>
+    <div id="survey">
         <h6>Please fill out the questionaire below</h6>
         <h3><strong>About You</strong></h3>
-        <h4>Name (Required)</h4>
+        <h6>Name (Required)</h6>
         <input type="text" id="name" class="form-control" required>
 
-        <h4>Link to Photo Image (Required)</h4>
+        <h6>Link to Photo Image (Required)</h6>
         <input type="text" id="photo" class="form-control" required>
 
         <hr>
         <p class="text-primary">select the options that <strong>best describe you</strong></p>
-    </header><br>
+        <br>
 
-    <form>
-        <fieldset>
-            <div class="form-group">
-                <label for="q1">1) I easily develop emotional ties to others.</label>
-                <select class="form-control" id="q1">
-                    <option value="none" selected disabled hidden>
-                        Select an Option
-                    </option>
-                    <option value="1">Completely False</option>
-                    <option value="2">Mostly False</option>
-                    <option value="3">Somewhat True or False</option>
-                    <option value="4">Mostly True</option>
-                    <option value="5">Completely True</option>
-                </select> <br>
+        <form>
+            <fieldset>
+                <div class="form-group">
+                    <label for="q1">1) I easily develop emotional ties to others.</label>
+                    <select class="form-control" id="q1">
+                        <option value="none" selected disabled hidden>
+                            Select an Option
+                        </option>
+                        <option value="1">Completely False</option>
+                        <option value="2">Mostly False</option>
+                        <option value="3">Somewhat True or False</option>
+                        <option value="4">Mostly True</option>
+                        <option value="5">Completely True</option>
+                    </select> <br>
 
-                <label for="q2">2) Having to depend on other people makes me uneasy.</label>
-                <select class="form-control" id="q2">
-                    <option value="none" selected disabled hidden>
-                        Select an Option
-                    </option>
-                    <option value="1">Completely False</option>
-                    <option value="2">Mostly False</option>
-                    <option value="3">Somewhat True or False</option>
-                    <option value="4">Mostly True</option>
-                    <option value="5">Completely True</option>
-                </select><br>
+                    <label for="q2">2) Having to depend on other people makes me uneasy.</label>
+                    <select class="form-control" id="q2">
+                        <option value="none" selected disabled hidden>
+                            Select an Option
+                        </option>
+                        <option value="1">Completely False</option>
+                        <option value="2">Mostly False</option>
+                        <option value="3">Somewhat True or False</option>
+                        <option value="4">Mostly True</option>
+                        <option value="5">Completely True</option>
+                    </select><br>
 
-                <label for="q3">3) I worry that my partner cares less about me than I care about him or her.</label>
-                <select class="form-control" id="q3">
-                    <option value="none" selected disabled hidden>
-                        Select an Option
-                    </option>
-                    <option value="1">Completely False</option>
-                    <option value="2">Mostly False</option>
-                    <option value="3">Somewhat True or False</option>
-                    <option value="4">Mostly True</option>
-                    <option value="5">Completely True</option>
-                </select><br>
+                    <label for="q3">3) I worry that my partner cares less about me than I care about him or her.</label>
+                    <select class="form-control" id="q3">
+                        <option value="none" selected disabled hidden>
+                            Select an Option
+                        </option>
+                        <option value="1">Completely False</option>
+                        <option value="2">Mostly False</option>
+                        <option value="3">Somewhat True or False</option>
+                        <option value="4">Mostly True</option>
+                        <option value="5">Completely True</option>
+                    </select><br>
 
-                <label for="q4">4) If a partner pushes me to establish a commitment, I freak out inside.</label>
-                <select class="form-control" id="q4">
-                    <option value="none" selected disabled hidden>
-                        Select an Option
-                    </option>
-                    <option value="1">Completely False</option>
-                    <option value="2">Mostly False</option>
-                    <option value="3">Somewhat True or False</option>
-                    <option value="4">Mostly True</option>
-                    <option value="5">Completely True</option>
-                </select><br>
+                    <label for="q4">4) If a partner pushes me to establish a commitment, I freak out inside.</label>
+                    <select class="form-control" id="q4">
+                        <option value="none" selected disabled hidden>
+                            Select an Option
+                        </option>
+                        <option value="1">Completely False</option>
+                        <option value="2">Mostly False</option>
+                        <option value="3">Somewhat True or False</option>
+                        <option value="4">Mostly True</option>
+                        <option value="5">Completely True</option>
+                    </select><br>
 
-                <label for="q5">5) If I'm not in a relationship, I am nobody.</label>
-                <select class="form-control" id="q5">
-                    <option value="none" selected disabled hidden>
-                        Select an Option
-                    </option>
-                    <option value="1">Completely False</option>
-                    <option value="2">Mostly False</option>
-                    <option value="3">Somewhat True or False</option>
-                    <option value="4">Mostly True</option>
-                    <option value="5">Completely True</option>
-                </select><br>
+                    <label for="q5">5) If I'm not in a relationship, I am nobody.</label>
+                    <select class="form-control" id="q5">
+                        <option value="none" selected disabled hidden>
+                            Select an Option
+                        </option>
+                        <option value="1">Completely False</option>
+                        <option value="2">Mostly False</option>
+                        <option value="3">Somewhat True or False</option>
+                        <option value="4">Mostly True</option>
+                        <option value="5">Completely True</option>
+                    </select><br>
 
-                <label for="q6">6) I am constantly trying to fix other people's problems.</label>
-                <select class="form-control" id="q6">
-                    <option value="none" selected disabled hidden>
-                        Select an Option
-                    </option>
-                    <option value="1">Completely False</option>
-                    <option value="2">Mostly False</option>
-                    <option value="3">Somewhat True or False</option>
-                    <option value="4">Mostly True</option>
-                    <option value="5">Completely True</option>
-                </select><br>
+                    <label for="q6">6) I am constantly trying to fix other people's problems.</label>
+                    <select class="form-control" id="q6">
+                        <option value="none" selected disabled hidden>
+                            Select an Option
+                        </option>
+                        <option value="1">Completely False</option>
+                        <option value="2">Mostly False</option>
+                        <option value="3">Somewhat True or False</option>
+                        <option value="4">Mostly True</option>
+                        <option value="5">Completely True</option>
+                    </select><br>
 
-                <label for="q7">7) I let my partner decide everything for me. </label>
-                <select class="form-control" id="q7">
-                    <option value="none" selected disabled hidden>
-                        Select an Option
-                    </option>
-                    <option value="1">Completely False</option>
-                    <option value="2">Mostly False</option>
-                    <option value="3">Somewhat True or False</option>
-                    <option value="4">Mostly True</option>
-                    <option value="5">Completely True</option>
-                </select><br>
+                    <label for="q7">7) I let my partner decide everything for me. </label>
+                    <select class="form-control" id="q7">
+                        <option value="none" selected disabled hidden>
+                            Select an Option
+                        </option>
+                        <option value="1">Completely False</option>
+                        <option value="2">Mostly False</option>
+                        <option value="3">Somewhat True or False</option>
+                        <option value="4">Mostly True</option>
+                        <option value="5">Completely True</option>
+                    </select><br>
 
-                <label for="q8">8) I do whatever my partner wants or tells me to do. </label>
-                <select class="form-control" id="q8">
-                    <option value="none" selected disabled hidden>
-                        Select an Option
-                    </option>
-                    <option value="1">Completely False</option>
-                    <option value="2">Mostly False</option>
-                    <option value="3">Somewhat True or False</option>
-                    <option value="4">Mostly True</option>
-                    <option value="5">Completely True</option>
-                </select><br>
+                    <label for="q8">8) I do whatever my partner wants or tells me to do. </label>
+                    <select class="form-control" id="q8">
+                        <option value="none" selected disabled hidden>
+                            Select an Option
+                        </option>
+                        <option value="1">Completely False</option>
+                        <option value="2">Mostly False</option>
+                        <option value="3">Somewhat True or False</option>
+                        <option value="4">Mostly True</option>
+                        <option value="5">Completely True</option>
+                    </select><br>
 
-                <label for="q9">9) It's hard for me to let my walls down.</label>
-                <select class="form-control" id="q9">
-                    <option value="none" selected disabled hidden>
-                        Select an Option
-                    </option>
-                    <option value="1">Completely False</option>
-                    <option value="2">Mostly False</option>
-                    <option value="3">Somewhat True or False</option>
-                    <option value="4">Mostly True</option>
-                    <option value="5">Completely True</option>
-                </select><br>
+                    <label for="q9">9) It's hard for me to let my walls down.</label>
+                    <select class="form-control" id="q9">
+                        <option value="none" selected disabled hidden>
+                            Select an Option
+                        </option>
+                        <option value="1">Completely False</option>
+                        <option value="2">Mostly False</option>
+                        <option value="3">Somewhat True or False</option>
+                        <option value="4">Mostly True</option>
+                        <option value="5">Completely True</option>
+                    </select><br>
 
-                <label for="q10">10) When a relationship starts to become more intimate, I feel the urge to break it
-                    off.</label>
-                <select class="form-control" id="q10">
-                    <option value="none" selected disabled hidden>
-                        Select an Option
-                    </option>
-                    <option value="1">Completely False</option>
-                    <option value="2">Mostly False</option>
-                    <option value="3">Somewhat True or False</option>
-                    <option value="4">Mostly True</option>
-                    <option value="5">Completely True</option>
-                </select><br>
-            </div>
+                    <label for="q10">10) When a relationship starts to become more intimate, I feel the urge to break it
+                        off.</label>
+                    <select class="form-control" id="q10">
+                        <option value="none" selected disabled hidden>
+                            Select an Option
+                        </option>
+                        <option value="1">Completely False</option>
+                        <option value="2">Mostly False</option>
+                        <option value="3">Somewhat True or False</option>
+                        <option value="4">Mostly True</option>
+                        <option value="5">Completely True</option>
+                    </select><br>
+                </div>
 
 
-            <button type="submit" id="submit" class="btn btn-primary">Submit</button>
+                <button type="submit" id="submit" class="btn btn-primary">Submit</button>
 
-        </fieldset>
-    </form>
-
+            </fieldset>
+        </form>
+    </div>
 </body>
 
-<!-- Modal -->
-<div id="results-modal" class="modal fade" role="dialog">
-    <div class="modal-dialog">
 
-        <!-- Modal content-->
-        <div class="modal-content">
-            <div class="modal-header">
-                <button class="close" data-dismiss="modal">&times;</button>
-                <h2 class="modal-title"><strong>Best Match</strong></h2>
-            </div>
-            <div class="modal-body">
-                <h2 id="match-name"></h2>
-                <img id="match-img" src="https://media.licdn.com/mpr/mpr/shrinknp_400_400/p/6/005/064/1bd/3435aa3.jpg"
-                    alt="">
-            </div>
-            <div class="modal-footer">
-                <button class="btn btn-default" data-dismiss="modal">Close</button>
-            </div>
-        </div>
-
-    </div>
-</div>
 
 </html>
+
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" type="text/javascript"></script>
 
 <script type="text/javascript">
 
     // when click submit
     $("#submit").on("click", function (event) {
+        console.log('CLICKEDTHISHO')
         event.preventDefault();
 
         //grab values (name,photo,scores)
         var user = {
             name: $("#name").val(),
-            photo: $("#photo").val(),
+            photo: ($("#photo").val() ? $("#photo").val() : "NOPHOTO"),
             scores: [
                 $("#q1").val(),
                 $("#q2").val(),
@@ -222,14 +210,32 @@
             ]
         }
         // AJAX post the data to the friends API.
+        //         var settings = {
+        //   "url": "http://www.localhost:3000/api/friends",
+        //   "method": "POST",
+        //   "timeout": 0,
+        //   "headers": {
+        //     "Content-Type": "application/x-www-form-urlencoded"
+        //   },
+        //   "data": {
+        //     "scores": "[1, 2, 3]",
+        //     "name": "ballsack"
+        //   }
+        // };
+
+        // $.ajax(settings).done(function (response) {
+        //   console.log(response);
+        // });
         $.post("/api/friends", user, function (data) {
-
+            (data.photo ? resphoto = data.photo : resphoto = "NOPHOTO")
             //get results from AJAX POST and show on the page
+            $("#survey").attr("hidden", true);
+            $("#match").attr("hidden", false);
             $("#match-name").text(data.name);
-            $("#match-img").attr("src", data.photo);
+            $("#matchphoto").attr("src", resphoto);
 
-            // Show the modal with the best match
-            $("#results-modal").modal("toggle");
+            // // Show the modal with the best match
+            // $("#results-modal").modal("toggle");
 
         });
     })
