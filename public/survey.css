@@ -1,0 +1,18 @@
+body{
+    background-color:#F2F8F4 ;
+}
+
+#survey{
+    margin-left: 15%;
+    margin-right: 15%;
+    
+}
+#main{
+    background-color:#F2F8F4;
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+
+select.form-control{
+    width: 30%;
+}
