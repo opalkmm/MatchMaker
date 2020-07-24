@@ -21,7 +21,7 @@
     <!--navbar and brand logo-->
     <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
         <a class="navbar-brand" href="#">
-            <img src="https://clipart.info/images/ccovers/1513313791facebook-circle-heart-love-png.png" width="30"
+            <img src="https://clipart.info/images/ccovers/1513313791facebook-circle-heart-lovmatche-png.png" width="30"
                 height="30" alt="">
             Match Maker
         </a>
@@ -30,9 +30,9 @@
 
     
         <div id="match" hidden=false>
-            <h2><strong>YOUR NEW BESTIE</strong></h2>
-            <h3 id="match-name"></h3>
-            <img height=300px width=auto id="matchphoto" src="">
+            
+            <h3 id="match-name" style="padding: 50px"></h3>
+            <img height=500px width=auto id="matchphoto" src="">
         </div>
         <div id="main">
         <div id="survey">
@@ -237,7 +237,7 @@
             //get results from AJAX POST and show on the page
             $("#survey").attr("hidden", true);
             $("#match").attr("hidden", false);
-            $("#match-name").text(data.name);
+            $("#match-name").text("Your Match : " + data.name);
             $("#matchphoto").attr("src", resphoto);
 
             // // Show the modal with the best match

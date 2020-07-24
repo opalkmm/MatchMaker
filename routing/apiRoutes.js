@@ -12,8 +12,8 @@ module.exports = function (app) {
   app.post("/api/friends", function (req, res) {
     //hold the result of the best match(object)
     var bestMatch = {
-      name: "nobody",
-      photo: "https://s3.amazonaws.com/cdn-origin-etr.akc.org/wp-content/uploads/2017/11/12235803/Boston-Terrier-On-White-03.jpg",
+      name: "None",
+      photo: "https://images.unsplash.com/photo-1455380579765-810023662ea2?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80",
       matchDifference: Infinity,
     };
 
