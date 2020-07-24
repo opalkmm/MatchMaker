@@ -13,7 +13,7 @@ var PORT = process.env.PORT || 3000;
 //data parsing
 app.use(bodyParser.urlencoded({extended: true}));
 app.use(bodyParser.json());
-
+app.use(express.static(__dirname + '/public/'));
 
 //point the server to the route files, routes giving the servers 'maps' to respond to users
 //route to serve html pages

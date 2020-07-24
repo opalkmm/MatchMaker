@@ -16,3 +16,11 @@ body{
 select.form-control{
     width: 30%;
 }
+input.form-control{
+    width: 50%;
+}
+
+div#match{
+    text-align: center;
+    box-shadow: 5px 10px #888888;
+}
