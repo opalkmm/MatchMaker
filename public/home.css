@@ -17,6 +17,19 @@ div {
 .carousel.slide {
   margin: 0 auto;
 }
+
+.carousel-inner .item {
+  height: auto;
+  width: 100%;
+  overflow: hidden;
+  background-size: cover;
+}
+
+.carousel-control{
+  padding: 30% 0 0 0;
+}
+
+
 /* 
 .crop {
   width: 100%;
